@@ -12,9 +12,8 @@ const AnecdoteList = () => {
     
 
     const vote = id => {
-        const anecdote = anecdotes.find(a => a.id === id)
         console.log('vote', id)
-        dispatch(addVoteToAnecdote(anecdote.id))
+        dispatch(addVoteToAnecdote(id))
     }
 
     return (
